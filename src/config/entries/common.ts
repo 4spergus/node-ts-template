@@ -6,8 +6,7 @@ const {LOG_LEVEL = LOGGER_LEVEL_ENUM.INFO, APP_ENV = APP_ENV_ENUM.TEST, PORT = "
 
 //* Validate required environment variables
 if (!SERVICE_NAME) {
-  console.log(process.env);
-  //throw new Error("No 'SERVICE_NAME' env variable provided");
+  throw new Error("No 'SERVICE_NAME' env variable provided");
 }
 
 //* Create the common config object
