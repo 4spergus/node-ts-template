@@ -3,7 +3,7 @@ module.exports = {
     "^.+\\.(t|j)sx?$": "@swc/jest"
   },
   testEnvironment: "node",
-  testMatch: ["**/_tests_/**/*.ts"],
+  testMatch: ["**/__tests__/**/*.ts"],
   testPathIgnorePatterns: ["/node_modules/", "\\.d\\.ts$"],
   collectCoverage: false,
   collectCoverageFrom: ["src/**/*.ts", "!src/**/*.d.ts", "!src/**/index.ts"],
@@ -19,6 +19,6 @@ module.exports = {
   coverageReporters: ["json", "lcov", "text", "clover", "html"],
   roots: ["<rootDir>"],
   moduleNameMapper: {
-    "^@/(.*)$": "<rootDir>/src/$1",
+    "^@/(.*)$": "<rootDir>/src/$1"
   }
 };
