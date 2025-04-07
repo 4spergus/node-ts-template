@@ -17,7 +17,7 @@ This repository provides a starter kit for building microservices using Express.
 ### Prerequisites
 
 - Node.js >=20
-- npm or yarn
+- npm
 
 ### Available Scripts
 
